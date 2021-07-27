@@ -81,7 +81,7 @@
 
                 $.ajax({
                     type: 'post',
-                    url: '/mybatis/todoList',
+                    url: '/jpa/todoList',
                     data: JSON.stringify([element.value]),
                     contentType: 'application/json; charset=utf-8',
                     dataType: 'text',
@@ -102,7 +102,7 @@
         console.log(idx);
         $.ajax({
             type: 'put',
-            url: '/mybatis/todoList',
+            url: '/jpa/todoList',
             data: JSON.stringify([idx]),
             contentType: 'application/json; charset=utf-8',
             dataType: 'text',
@@ -120,7 +120,7 @@
         console.log(idx);
         $.ajax({
             type: 'delete',
-            url: '/mybatis/todoList',
+            url: '/jpa/todoList',
             data: JSON.stringify([idx]),
             contentType: 'application/json; charset=utf-8',
             dataType: 'text',
